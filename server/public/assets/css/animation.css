@@ -1,0 +1,35 @@
+.scroll-down {
+    animation: scroll-down 0.5s linear forwards;
+}
+@keyframes scroll-down {
+    0% { transform: translate(0, -100%); }
+    100% { transform: translate(0, 0); }
+}
+.scroll-up-margin {
+    animation: scroll-up 0.5s linear forwards;
+}
+@keyframes scroll-up {
+    0% { margin-top: -100%; }
+    100% { margin-top: 0; }
+}
+.slide-in-left {
+    animation: slide-in-left 0.5s linear forwards;
+}
+@keyframes slide-in-left {
+    0% { transform: translate(-100%, 0); }
+    100% { transform: translate(0, 0); }
+}
+.slide-in-bottom {
+    animation: slide-in-bottom 0.5s linear forwards;
+}
+@keyframes slide-in-bottom {
+    0% { transform: translate(0, -100%); }
+    100% { transform: translate(0, 0); }
+}
+.card-slide-bottom {
+    animation: card-slide-bottom 0.5s linear forwards;
+}
+@keyframes card-slide-bottom {
+    0% { transform: translate(0, -100%); }
+    100% { transform: translate(0, 0); }
+}

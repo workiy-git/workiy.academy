@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="65px" viewBox="0 0 84 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home-bg-dot-dot</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.168480283">
+        <g id="Header" transform="translate(28.000000, -431.000000)" fill="#15C872">
+            <g id="home-bg-dot-dot" transform="translate(-28.000000, 431.000000)">
+                <circle id="Oval" cx="4.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="23.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="41.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="60.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="4.5" cy="23.5" r="4.5"></circle>
+                <circle id="Oval" cx="23.5" cy="23.5" r="4.5"></circle>
+                <circle id="Oval" cx="41.5" cy="23.5" r="4.5"></circle>
+                <circle id="Oval" cx="60.5" cy="23.5" r="4.5"></circle>
+                <circle id="Oval" cx="4.5" cy="41.5" r="4.5"></circle>
+                <circle id="Oval" cx="23.5" cy="41.5" r="4.5"></circle>
+                <circle id="Oval" cx="41.5" cy="41.5" r="4.5"></circle>
+                <circle id="Oval" cx="60.5" cy="41.5" r="4.5"></circle>
+                <circle id="Oval" cx="4.5" cy="60.5" r="4.5"></circle>
+                <circle id="Oval" cx="23.5" cy="60.5" r="4.5"></circle>
+                <circle id="Oval" cx="41.5" cy="60.5" r="4.5"></circle>
+                <circle id="Oval" cx="60.5" cy="60.5" r="4.5"></circle>
+                <circle id="Oval" cx="79.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="79.5" cy="23.5" r="4.5"></circle>
+                <circle id="Oval" cx="79.5" cy="41.5" r="4.5"></circle>
+                <circle id="Oval" cx="79.5" cy="60.5" r="4.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

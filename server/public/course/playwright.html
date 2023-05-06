@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.Workiy.com/course/playwright.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2023 19:16:49 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Playwright Automation | Learn Playwright - Workiy</title>
+    <meta name="description" content="Workiy's IT Essentials training program is designed for future IT professionals to provide them with the necessary skills. Through the Program, you will focus on information that will build your confidence and make you more competitive in the IT industry. 2500+ Students Trained In Non-IT to IT Transformation Since 2019. Sign up for the IT Professional Courses now!"
+    />
+    <link rel=icon href="..//assets/img/favicon.png" sizes="20x20" type="image/png">
+    
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/font/releases/v5.15.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="..//assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..//assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="..//assets/css/animation.css">
+    <link rel="stylesheet" href="..//assets/css/common.css">
+    <link rel="stylesheet" href="..//assets/css/main.css">
+    <link rel="stylesheet" href="..//assets/css/style.css">
+    <link rel="stylesheet" href="..//assets/js/script.js">
+
+    <!-- Reference to html5gallery.js -->
+    <script type="text/javascript" src="..//assets/js/html5gallery.js"></script>
+
+
+</head>
+
+<body class="sub-page">
+    <div id="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <header class="w-100 shadow shadow-lg-none">
+        <div class="container px-3 p-sm-0 h-100">
+            <div class="w-100 h-100 d-flex">
+                <nav class="w-100 p-0 navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="..//assets/img/logo.svg" alt="Logo" class="w-100">
+                    </a>
+                    <button class="navbar-toggler" type="button">
+                        <svg width="100%" height="100%" viewBox="0 0 612 612">
+                            <g>
+                                <path d="M581.4,520.199H30.6c-16.891,0-30.6,13.709-30.6,30.6C0,567.691,13.709,581.4,30.6,581.4h550.8
+c16.891,0,30.6-13.709,30.6-30.602C612,533.908,598.291,520.199,581.4,520.199z"></path>
+                                <path d="M581.4,275.399H30.6C13.709,275.399,0,289.108,0,306s13.709,30.6,30.6,30.6h550.8
+c16.891,0,30.6-13.709,30.6-30.6S598.291,275.399,581.4,275.399z"></path>
+                                <path d="M30.6,91.799h550.8
+c16.891,0,30.6-13.708,30.6-30.6c0-16.892-13.709-30.6-30.6-30.6H30.6C13.709,30.6,0,44.308,0,61.2
+C0,78.091,13.709,91.799,30.6,91.799z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="shadow-lg-none navbar-collapse text-center" id="main-menu">
+                        <div class="main-menu-wrapper">
+                            <ul class="navbar-nav ml-lg-4 mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../all-courses.html">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="../corporate-training.html">Corporate Training</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Events</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../about-us.html">About</a>
+                                </li>
+                            </ul>
+                            <div class="form-inline justify-content-center my-0">
+                                <a href="https://www.growwithleaf.com/#/signIn" target="_blank">
+                                    <button class="btn mr-2 mr-sm-2 mr-lg-3 header-btn">
+                                        <img src="..//assets/img/sign-in.svg" alt="Sign In">
+                                        <span class="ml-2">Sign In</span>
+                                    </button>
+                                </a>
+                                <a href="#enquiry">
+                                    <button class="ml-sm-2 ml-lg-0 btn header-btn green">
+                                        <img src="..//assets/img/start-course.svg"
+                                            alt="Start Courses">
+                                        <span class="ml-2">Start Course</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-100 common-section course_head_bnr">
+        <div class="h-100 container px-3 p-sm-0 mx-auto">
+            <div class="h-100 w-100 row m-0 align-items-end position-relative">
+                <div class="w-100 d-flex align-items-center flex-wrap sim-rating">
+                    <div class="sim-rating-block">
+                        <div class="rating-star">
+                            <img src="..//assets/img/star.svg" alt="Rating Icon">
+                            <img src="..//assets/img/star.svg" alt="Rating Icon">
+                            <img src="..//assets/img/star.svg" alt="Rating Icon">
+                            <img src="..//assets/img/star.svg" alt="Rating Icon">
+                            <img src="..//assets/img/star.svg" alt="Rating Icon">
+                        </div>
+                        <p class="m-0 mt-2">Highly Rated</p>
+                    </div>
+                </div>
+                <h2 class="m-0 common-title play_hdh2">Playwright <span class="green_color">Automation</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 training-section courses mt-4 mb-4">
+        <div class="dots">
+            <img src="..//assets/img/home-bg-dot-dot.svg" alt="Dot Bg" class="w-100">
+        </div>
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 p-0 pr-lg-4 about-images">
+                    <img src="..//assets/img/unlock-final.png" alt="Dot Bg" class="w-100">
+                </div>
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 p-0 pr-lg-4">
+                    <h2 class="m-0 common-title ">Unlock the power of <span class="green_color">Playwright Automation Training</span></h2>
+                    <p class=" m-0 mt-2 ">Playwright is an open-source tool developed by Microsoft that enables developers and testers to automate web browsers and perform tasks such as end-to-end testing and web scrapping. It is built on top of the popular web automation library, Puppeteer, and offers additional features, such as cross-browser support and the ability to simulate user input.</p>
+                    <p class=" m-0 mt-2 ">Learning to use Playwright can unlock the power of automation and save time and resources in your development and testing processes. With Playwright, you can quickly write scripts to perform tasks such as filling out forms, clicking buttons, and navigating pages on your website or application. You can also use Playwright to create comprehensive end-to-end test suites that ensure your application is functioning as expected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 timingcourses" style="margin: 100px 0 70px !important;">
+        <div class="container timeboxgreen px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-12 col-md-12 col-lg-7 unlock-img">
+                    <img src="..//assets/img/Workiy-Site-Launch_V1.png" alt="Dot Bg">
+                </div>
+                <div class="col-12 col-md-12 col-lg-5 upcoming_mob">
+                    <h2>Upcoming Classes </h2>
+                    <p>Learn Playwright automation training course along with live projects with 100% career guidance. We designed our course to help you become an expert.</p>
+                    <!-- <br> -->
+                    <br>
+                    <!-- <button class="btn-course"><strong>5th November 2022</strong></button> -->
+                    <div class="row launch_date launch_date_fresh">
+                        <h3 id="timer">01 Apr 2023</h3> <h3>|</h3> <h3 id="timer_aws">CLOSING TIME</h3>
+                        <div class="knw">
+                            <button onclick="window.location.href = '#course_enquiry'">Enroll Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="nonit features_green">
+        <div class="section-padding-02 mt-n6">
+            <div class="container">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <h2 class="m-0">Playwright Automation <span class="green_color slide-in-left">Training Features</span></h2>
+                </div>
+                <!-- About Items Wrapper Start -->
+                <div class="about-items-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <!-- About Item Start -->
+                            <div class="about-item">
+                                <div class="item-icon-title">
+                                    <div class="item-icon">
+                                        <img class="selinium-auto" src="..//assets/img/playwright/play_website.png">
+                                    </div>
+                                    <!-- <div class="item-title">
+                                        <h3 class="title">Top Instructors</h3>
+                                    </div> -->
+                                </div>
+                                <p><strong>Cross-browser support:</strong> Playwright can automate popular web browsers such as Chrome, Firefox, and Safari, allowing you to test your application across multiple platforms.</p>
+                            </div>
+                            <!-- About Item End -->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- About Item Start -->
+                            <div class="about-item">
+                                <div class="item-icon-title">
+                                    <div class="item-icon">
+                                        <img class="selinium-auto" src="..//assets/img/playwright/play_ease.png">
+                                    </div>
+                                    <!-- <div class="item-title">
+                                        <h3 class="title">Top Instructors</h3>
+                                    </div> -->
+                                </div>
+                                <p><strong>Ease of use:</strong> Playwright is built on top of the popular web automation library Puppeteer and offers a simple and intuitive API for writing scripts.</p>
+                            </div>
+                            <!-- About Item End -->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- About Item Start -->
+                            <div class="about-item">
+                                <div class="item-icon-title">
+                                    <div class="item-icon">
+                                        <img class="selinium-auto" src="..//assets/img/playwright/play_debug.png">
+                                    </div>
+                                    <!-- <div class="item-title">
+                                        <h3 class="title">Top Instructors</h3>
+                                    </div> -->
+                                </div>
+                                <p><strong>Debugging tools:</strong> Playwright includes a range of debugging tools to help you troubleshoot and fix issues in your scripts.</p>
+                            </div>
+                            <!-- About Item End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- About Items Wrapper End -->
+
+                <!-- About Items Wrapper Start -->
+                <div class="about-items-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <!-- About Item Start -->
+                            <div class="about-item">
+                                <div class="item-icon-title">
+                                    <div class="item-icon">
+                                        <img class="selinium-auto" src="..//assets/img/playwright/play_performance.png">
+                                    </div>
+                                    <!-- <div class="item-title">
+                                        <h3 class="title">Top Instructors</h3>
+                                    </div> -->
+                                </div>
+                                <p><strong>Performance:</strong> Playwright is designed for high-performance automation, with scripts running faster and more reliably than other tools.</p>
+                            </div>
+                            <!-- About Item End -->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- About Item Start -->
+                            <div class="about-item">
+                                <div class="item-icon-title">
+                                    <div class="item-icon">
+                                        <img class="selinium-auto" src="..//assets/img/playwright/play_community.png">
+                                    </div>
+                                    <!-- <div class="item-title">
+                                        <h3 class="title">Top Instructors</h3>
+                                    </div> -->
+                                </div>
+                                <p><strong>Community support:</strong> Playwright is an open-source tool with a large and active community of developers and testers who contribute to its development and offer support and resources.</strong></p>
+                            </div>
+                            <!-- About Item End -->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                        </div>
+                    </div>
+                </div>
+                <!-- About Items Wrapper End -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-100 mt-5 mb-4">
+        <div class="container px-3 p-sm-0 mx-auto cta_slight">
+            <div class="row m-0">
+                <div class="col-lg-9 drop_new">
+                    <h2 class="main-title">Skyrocket your career growth <br><span class="green_color">by Upgrading Your Skills</span></h2>
+                </div>
+
+                <div class="col-lg-3 h3_dropp">
+                    <h3><a href="#course_enquiry">Enroll Now</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 youtube_video courses mt-5 mb-4" style="margin-bottom: 0 !important;">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-lg-12">
+                    <iframe width="100%" height="620px" src="https://www.youtube.com/embed/kz_qTilPhYs" title="Playwright will be the future most demanding automation tool. 2023 will be the year for Playwright." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 common-section offer social-icoo">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0" style="display: flex; align-items: center;">
+                <div class="col-12 col-lg-6 col-md-12 p-0 text-center text-md-left">
+                    <ul class="m-0 p-0 media-icons">
+                        <h3 style="font-size: 26px; margin-bottom: 30px;">The #1 Playwright Automation Training; Here's Why?</h3>
+                        <li>
+                            <a href="https://www.facebook.com/Workiy" target="_blank"><img src="..//assets/img/fb.png" alt="Google Icon"></a> 4.8 Star Rating 
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Workiy+Software+Solutions+Private+Limited/@12.9874317,80.1831828,17z/data=!4m7!3m6!1s0x3a525e023016799d:0x38670fca42889dcf!8m2!3d12.9874317!4d80.1853715!9m1!1b1" target="_blank"><img src="..//assets/img/google-connect.png" alt="FB Icon"> </a> 2,549 Google Reviews
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-md-12 p-0 mt-4 mt-md-0 ml-auto btn-block">
+                    <div class="tab_enroll d-flex align-items-center flex-wrap justify-content-center justify-content-md-end">
+                        <button class="btn page-btn" onclick="window.location.href = '#course_enquiry'">
+                            <span>Enroll Now</span>
+                            <img src="..//assets/img/arrow-right.svg" alt="Arrow Right" class="ml-auto w-100">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="w-100 training-section courses mt-4 mb-4">
+        <div class="dots">
+            <img src="..//assets/img/home-bg-dot-dot.svg" alt="Dot Bg" class="w-100">
+        </div>
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 p-0 pr-lg-4">
+                    <h2 class="m-0">How important is the <span class="green_color">Playwright Automation Training?</span></h2>
+                    <p class=" m-0 mt-2 ">Playwright automation training is an essential investment for developers and testers who want to optimize their workflows and improve the efficiency and reliability of their applications. Automating tasks such as filling out forms, clicking buttons, and navigating pages can save you time and effort, especially if you need to perform these tasks repeatedly. By learning to use Playwright, you can easily write scripts to automate these tasks and free up your time and resources to focus on more important tasks, such as developing new features and fixing bugs.</p>
+                    </br>
+                    <h2 class="m-0 common-title  "></h2>
+                    <p class="m-0 mt-2 ">In addition to saving time and resources, Playwright's support for multiple web browsers allows you to easily test your application across different platforms, ensuring that it works as expected for all users. This is particularly important in today's world, where users access the internet on various devices, including laptops, tablets, and smartphones. By testing your application across multiple browsers, you can ensure that it functions correctly and provides a seamless user experience for all users.</p>
+                    </br>
+                    
+                </div>
+
+                <div class="col-12 col-md-10 col-lg-8 col-xl-5 p-0 pr-lg-4">
+                     <img src="..//assets/img/playwright/Playwright-Automation-imp.png" alt="Dot Bg" class="w-100 border-radius">
+                </div>
+
+                <div class="col-md-12 col-lg-12 p-0">
+                    <p class="m-0 mt-2 ">Playwright's debugging tools are another important feature that makes it valuable for automation training. Debugging can be time-consuming and frustrating, but with Playwright's debugging tools, you can easily troubleshoot and fix any issues in your scripts. This saves you time and improves your application's reliability, ensuring it functions correctly for all users.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trainer_bio">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Short Bio about our <span class="green_color">Playwright Automation Trainer</span></h3>
+                </div>
+                <div class="col-lg-6">
+                    <div class="inline_bio">
+                        <div class="row align-justify-center"> 
+                            <div class="col-lg-5 col-md-4"><img src="..//assets/img/Babu-final.jpg"></div>
+                            <div class="col-lg-7 col-md-8 bio_subb">
+                                <h3>Babu Manickam</h3>
+                                <h6>Selenium Early Adopter</h6>
+                            </div>
+                        </div>
+                        <p>A real-time professional with solid experience in software testing and development, specialized in building extensive test automation services in high-performance platforms supporting thousands of tests daily.</p>
+
+                        <span class="bio_iclass">
+                            <ul class="ul_new">
+                                <li><i class="fa fa-user"></i>SELENIUM EXPERT</li>
+                                <li><i class="fa fa-users"></i>22 Years of Experience</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 common-section bestway-selinium">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-12 col-md-7 p-0 text-center text-md-left">
+                    <h3 style="color: #fff;">Best way to learn Playwright Automation </h3>
+                    <p class="m-0 mt-2">Playwright automation is a valuable skill for developers and testers who want to streamline their workflows and improve the efficiency and reliability of their applications. There are several ways to learn Playwright, including online courses and tutorials, documentation and guides, and hands-on experience.</p>
+                    <br>
+                    <p class="m-0 mt-2">An effective way to learn Playwright is to follow along with documentation and guides provided by the Workiy team. These resources usually offer detailed explanations of the Playwright's different features and functions and code examples to help you understand how to use them.</p>
+                    <br>
+                    <div class="countt aws_bestway">
+                        <span>Launching Date: 01 Apr 2023</span> <a href="#course_enquiry">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-end aws_way_margin">
+                       <img src="..//assets/img/nonit/Non-IT-training.png" width="100%"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Accordian New style -->
+    <section class="accordian_new" style="padding: 50px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mb-4">
+                <h3>Weekly <span class="green_color">Training Programs:</span></h3>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <!-- Accordion -->
+              <div id="accordionExample" class="accordion shadow">
+
+                <!-- Accordion item 1 -->
+                <div class="card">
+                  <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark  collapsible-link py-2">Introduction to Playwright</a></h6>
+                  </div>
+                  <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Architecture, Internals</li>
+                            <li>Language Bindings, WebSocket, Browser Downloads</li>
+                            <li>API and documentations</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 2 -->
+                <div class="card">
+                  <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Browser, Context, Page</a></h6>
+                  </div>
+                  <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Chrome, Firefox, Edge, WebKit</li>
+                            <li>Channel, Headless, Strict Selectors</li>
+                            <li>PersistentContext, Authentication</li>
+                            <li>Skip Login</li>
+                            <li>Timeouts and Delays</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 3 -->
+                <div class="card">
+                  <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Playwright for Web</a></h6>
+                  </div>
+                  <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>CSS Selector, XPath</li>
+                            <li>Browser and Element Handles</li>
+                            <li>Textbox, Textarea, Button</li>
+                            <li>Dropdown, Radio Button, CheckBox</li>
+                            <li>Web Table, Calendar, Mouse, Keyboard</li>
+                            <li>Dialog, Frame, Window Handle, ShadowRoot</li>
+                            <li>File Uploads, File Downloads</li>
+                            <li>Attach to Existing Browser</li>
+                            <li>Screenshot and Video</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 4 -->
+                <div class="card">
+                  <div id="headingfour" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Playwright for API</a></h6>
+                  </div>
+                  <div id="collapsefour" aria-labelledby="headingfour" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Request, Response</li>
+                            <li>Methods - Get, Post, Put, Patch, Delete</li>
+                            <li>Contexts, Headers, Parameters</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 mx-auto">
+              <!-- Accordion -->
+              <div id="accordionExamplee" class="accordion shadow">
+
+                <!-- Accordion item 7 -->
+                <div class="card">
+                  <div id="headingseven" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven" class="d-block position-relative text-dark  collapsible-link py-2">Javascript Handlers and Playwright Listeners</a></h6>
+                  </div>
+                  <div id="collapseseven" aria-labelledby="headingseven" data-parent="#accordionExamplee" class="collapse show">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Playwright Exceptions and Assertions</li>
+                            <li>DevTools - Capture API , Emulation, Geo Location, Console, Notifications</li>
+                            <li>Tracing and TraceViewer</li>
+                            <li>Test Generator and Test Runner</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 8 -->
+                <div class="card">
+                  <div id="headingeight" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Integrations</a></h6>
+                  </div>
+                  <div id="collapseeight" aria-labelledby="headingeight" data-parent="#accordionExamplee" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>TestNG (Test Runner)</li>
+                            <li>Cucumber (BDD)</li>
+                            <li>ExtentReports (Reports)</li>
+                            <li>Jenkins (CI/CD)</li>
+                            <li>Selenium Grid (Distributed Execution)</li>
+                            <li>Axe (Accessibility Testing)</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 9 -->
+                <div class="card">
+                  <div id="headingnine" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Frameworks</a></h6>
+                  </div>
+                  <div id="collapsenine" aria-labelledby="headingnine" data-parent="#accordionExamplee" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Pattern (Page) Object Model</li>
+                            <li>Matschie : (UI + API) with Playwright + TestNG + Cucumber + Extent Reports + Owner + Faker</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 10 -->
+                <div class="card">
+                  <div id="headingten" class="card-header bg-white shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseten" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Projects</a></h6>
+                  </div>
+                  <div id="collapseten" aria-labelledby="headingten" data-parent="#accordionExamplee" class="collapse">
+                    <div class="card-body p-5">
+                        <ul class="ul_li">
+                            <li>Salesforce, LeafTaps</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+   
+<!-- TESTIMONIALS -->
+    <section class="testimonials_2 mb-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="container mt-5">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                        <h2 class="" style="text-align: center; margin-bottom: 30px;">Playwright Automation <span class="green_color">Training Reviews</span></h2>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center py-3 feedback_h">
+                        
+                        <div class="mr-2">
+                            <div class="cardd">
+                                <div class="px-2 py-2">
+                                    <img src="..//assets/img/playwright/playwright_testi1.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ml-2">
+                            
+                            <div class="cardd">
+                                <div class="px-2 py-2">
+                                    <img src="..//assets/img/playwright/playwright_testi2.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ml-2">
+                            
+                            <div class="cardd">
+                                <div class="px-2 py-2">
+                                    <img src="..//assets/img/playwright/playwright_testi3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END OF TESTIMONIALS -->
+
+    <section id="course_enquiry" class="w-100 enquiry-section offer course_enquiry" style="background:url(..//assets/img/WorkiyWebpage_BGBanner.jpg); background-size: cover; background-position-x: center;">
+        <form action='https://forms.zohopublic.com/Workiy/form/Booknow/formperma/wNeV81X4seTQtnerU1oOpsDDoNH9wUZ4dL9q8bb71lU/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+            <div class="container padded px-3 p-sm-0 mx-auto">
+                <div class="row m-0">
+                    <div class="col-12 col-md-12 p-0">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="w-100 flex-wrap cursor-pointer center-control">
+                                <span class="btn" style="padding-left: 0;">
+                                    <h2 class="ln-height course_career_frm mb-4">Enroll Now and Kick Start Your Playwright Automation Journey</h2>
+                                </span>
+                            </div>
+                            <!-- <div class="w-100 flex-wrap cursor-pointer center-control drop_course_frm">
+                                <span class="btn" style="padding-left: 0;">
+                                    <h6>Drop us an enquiry to get started.</h6>
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <ul class="d-flex align-items-center flex-wrap enquiry course_li">
+                    <div class="row m-0 ">
+                        <div class="col-12 col-md-12 p-0 text-left text-md-left ">
+                            <ul class="d-flex align-items-left flex-wrap">
+                                <li class="w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>Name</h6>
+                                        <input class="txt page-txt " name="SingleLine" required />
+                                    </span>
+                                </li>
+                                <li class="even w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>Email</h6>
+                                        <input class="txt page-txt " name="Email" required />
+                                    </span>
+                                </li>
+                                <li class="w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>Phone Number</h6>
+                                        <input class="txt page-txt " compname="PhoneNumber"
+                                            name="PhoneNumber_countrycode" required />
+                                    </span>
+                                </li>
+                                <li class="even w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>Course</h6>
+                                        <select class="txt page-txt" name="Dropdown">
+                                            <option value="AWS">AWS Solution Architect</option>
+                                            <option value="Appium">Appium Automation</option>
+                                            <option value="Kubernetes&#x20;Certification">Kubernetes Certification</option>
+                                            <option value="Data&#x20;Structures&#x20;and&#x20;Algorithms">Data
+                                                Structures and Algos</option>
+                                            <option value="DevOps">DevOps BootCamp</option>
+                                            <option value="Full&#x20;Stack&#x20;Automation">Full Stack Automation
+                                            </option>
+                                            <option value="Full&#x20;Stack&#x20;Development">Full Stack Development
+                                            </option>
+                                            <option value="JMeter&#x20;BootCamp">JMeter BootCamp</option>
+                                            <option value="Non-IT">Non-IT to IT</option>
+                                            <option value="ReactJS&#x20;Development">ReactJS Development</option>
+                                            <option value="Rest&#x20;API">RestAPI Automation</option>
+                                            <option value="RestAPI&#x20;BootCamp">RestAPI BootCamp</option>
+                                            <option value="SDET&#x20;BootCamp">SDET BootCamp</option>
+                                            <option value="Selenium-Bootcamp">Selenium Bootcamp</option>
+                                            <option value="Selenium">Selenium Webdriver
+                                            </option>
+                                            <option value="Freshers">
+                                                Freshers Testing Workshop</option>
+                                            <option selected="true" value="Playwright">Playwright</option>
+
+                                        </select>
+                                </li>
+                                <li class="w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>Message</h6>
+                                        <textarea class="txt page-txt" name="MultiLine" required></textarea>
+                                    </span>
+                                </li>
+                                <li class="even flex-item w-100 w-sm-auto mt-3 mt-sm-0 d-flex flex-wrap cursor-pointer left-control">
+                                    <span class="txt">
+                                        <h6>&nbsp;</h6>
+                                        <a href="https://www.growwithleaf.com/#/signIn" target="_blank">
+                                        <button class="btn mr-2 mr-sm-2 mr-lg-3 header-btn course_fm_btn">
+                                            <img src="..//assets/img/arrow-right.svg"
+                                                alt="Sign In">
+                                            <span class="ml-2">Submit</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </form>
+    </section>
+
+    <section class="w-100 common-section has-anim testimonial faq_course">
+        <div class="main-container">
+            <div class="container px-3 p-sm-0 mx-auto">
+                <!-- <h6 class="m-0 mb-3 sub-title">Frequently Asked Questions</h6> -->
+                <h3 class="m-0 mb-4 mb-md-5 overflow-hidden d-flex flex-wrap common-title">
+                    <span>FAQs</span>
+                </h3>
+                <div id="faq"> <!-- class="pt-4 pt-md-5" --> 
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#faq-item-1">
+                                What is Playwright automation training?
+                            </a>
+                        </div>
+                        <div id="faq-item-1" class="collapse show" data-parent="#faq">
+                            <div class="card-body">
+                                Playwright automation training is a course or program that teaches developers and testers how to use Playwright, an open-source tool developed by Microsoft for automating web browsers and performing tasks such as end-to-end testing and web scraping.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#faq-item-2">
+                                What will I learn in the Playwright automation training course?
+                            </a>
+                        </div>
+                        <div id="faq-item-2" class="collapse" data-parent="#faq">
+                            <div class="card-body">
+                                In the Playwright automation training course, you will learn how to use Playwright to automate web browsers and perform tasks such as filling out forms, clicking buttons, and navigating pages. You will also learn how to write end-to-end tests to validate the functionality of your application and how to use Playwright's debugging tools to troubleshoot and fix issues in your scripts.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#faq-item-3">
+                                What are the benefits of Playwright automation training?
+                            </a>
+                        </div>
+                        <div id="faq-item-3" class="collapse" data-parent="#faq">
+                            <div class="card-body">
+                                Some benefits of Playwright automation training include the ability to save time and resources by automating tasks such as filling out forms, clicking buttons, and navigating pages, improving the efficiency and reliability of your application by writing end-to-end tests, and troubleshooting and fixing issues in your scripts more quickly and effectively with Playwright's debugging tools.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#faq-item-4">
+                                Is Playwright automation training worth it?
+                            </a>
+                        </div>
+                        <div id="faq-item-4" class="collapse" data-parent="#faq">
+                            <div class="card-body">
+                                Whether or not Playwright automation training is worth it will depend on your specific needs and goals. If you are a developer or tester looking to automate your workflows and improve the efficiency and reliability of your application, Playwright automation training could be a valuable investment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#faq-item-5">
+                                How do I enroll in Playwright automation training?
+                            </a>
+                        </div>
+                        <div id="faq-item-5" class="collapse" data-parent="#faq">
+                            <div class="card-body">
+                                If you are interested in learning more about the Playwright automation training offered by Workiy and how it can benefit you and your organization, simply visit the Workiy website and look for information on the course or program. If you have any questions or need more information, you can also contact Workiy directly and a representative will be happy to assist you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="w-100 mb-4">
+        <div class="container px-3 p-sm-0 mx-auto cta_client">
+            <div class="row m-0">
+                <div class="col-lg-12 drop_new">
+                    <h2 class="main-title">Best Supporter of <span class="green_color">Workiy</span></h2>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="w-100 common-section offer">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class="col-12 col-md-6 p-0 text-center text-md-left">
+                    <h6 class="m-0 mt-2 mt-md-0">Skyrocket your career growth by Upgrading Your Skills</h6>
+                </div>
+                <div class="col-12 col-md-3 p-0 mt-4 mt-md-0 ml-auto btn-block">
+                    <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-end">
+                        <button class="btn page-btn" onclick="window.location.href = '#course_enquiry'">
+                            <span>Enroll Now</span>
+                            <img src="..//assets/img/arrow-right.svg" alt="Arrow Right"
+                                class="ml-auto w-100">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-100 common-section">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="row m-0">
+                <div class=" col-12 col-md-6 col-lg-5 p-0 pr-md-4 pr-lg-5 mb-4 mb-lg-0">
+                    <a href="javascript:void(0)" class="m-0 p-0 navbar-brand">
+                        <img class="w-100" src="..//assets/img/logo.svg" alt="Logo">
+                    </a>
+                    <p class="mt-3">Workiy offers a rigorous academic program with a history of excellence in automation engineering.
+                    </p>
+                    <div class="address-block">
+                        <p class="mb-2">
+                            <img src="..//assets/img/location.svg" alt="Location Icon" class="w-100">
+                            <span>Ottiyambakkam Road , Chennai - 126</span>
+                        </p>
+                        <p class="mb-2">
+                            <img src="..//assets/img/call.svg" alt="Call Icon" class="w-100">
+                            <span>+91 (444) 554 4246</span>
+                        </p>
+                        <p class="mb-2">
+                            <img src="..//assets/img/message.svg" alt="Message Icon" class="w-100">
+                            <span>hello@Workiy.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-5 p-0 mb-3 mb-md-0">
+                    <div class="row m-0">
+                        <div class=" col-12 col-sm-6 p-0 mb-4 mb-md-0 pr-sm-4 quick-links">
+                            <p class="common-title sm-text">Company</p>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <a href="../index-2.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../about-us.html">About</a>
+                                </li>
+                                <!--<li>
+                                    <a href="javascript:void(0)">Careers</a>
+                                </li> -->
+                                <li>
+                                    <a href="../contact.html">Contact Us</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="javascript:void(0)">Brand Guidelines</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class=" col-12 col-sm-6 p-0 mb-4 mb-md-0 pl-sm-4 quick-links">
+                            <p class="common-title sm-text">Product</p>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <a href="../corporate-training.html">Corporate Training</a>
+                                </li>
+                                <li>
+                                    <a href="../all-courses.html">Courses</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="../instructors.html">For Instructors</a>
+                                </li> -->
+                                <li>
+                                    <a href="../blog.html">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-2 pl-0">
+                    <p class="common-title sm-text">Social Media</p>
+                    <ul class="m-0 p-0 media-icons">
+                        <li>
+                            <a href="https://www.facebook.com/Workiy" target="_blank"><img src="..//assets/img/fb.png" alt="FB Icon"> </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Workiy1" target="_blank"><img src="..//assets/img/twitter.png" alt="Twitter Icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/Workiy" target="_blank"><img src="..//assets/img/linked-in.png" alt="LinkedIn Icon"></a>
+                        </li>
+                        <br><br>
+                        <li>
+                            <a href="https://www.instagram.com/Workiy_education" target="_blank"><img src="..//assets/img/instagram.png" alt="Instagram Icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC1XXuj47hG4bE40iG2u-hEQ" target="_blank"><img src="..//assets/img/youtube.png" alt="Youtube Icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w-100 sub-footer">
+        <div class="container px-3 p-sm-0 mx-auto">
+            <div class="copy-block d-flex align-items-center flex-wrap justify-content-center justify-content-md-end">
+                <div class="d-flex align-items-center flex-wrap terms-text">
+                    <a href="../terms-and-conditions.html">Terms &amp; Conditions</a>
+                    <a class="ml-auto ml-sm-4" href="../privacy-policy.html">Privacy Policy</a>
+                    <a class="ml-auto ml-sm-4" href="javascript:void(0)">Sitemap</a>
+
+                </div>
+                <p class="m-0 mt-2 mt-md-0 ml-auto w-100 text-center text-md-center w-md-auto">© 2022 - Workiy. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="..//assets/js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://assets.Workiy.com/assets/js/chat.js"></script> -->
+    <!-- <script>
+        setTimeout(function() {
+            $zopim.livechat.window.show();
+        }, 5000);
+        var counter = 0;
+        setInterval(function() {
+            ++counter;
+            var ua = navigator.userAgent.toLowerCase(),
+                platform = navigator.platform.toLowerCase();
+            platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0], isMobile = /ios|android|webos/.test(platformName);
+            if (!isMobile) {
+                $zopim.livechat.setOnUnreadMsgs(function(numUnread) {
+                    if (numUnread > 0 && !$zopim.livechat.window.getDisplay()) {
+                        $zopim.livechat.window.show();
+                    }
+                });
+            } else if (counter % 2 == 0) {
+                $zopim.livechat.setOnUnreadMsgs(function(numUnread) {
+                    if (numUnread > 0 && !$zopim.livechat.window.getDisplay()) {
+                        $zopim.livechat.window.show();
+                        $zopim.livechat.mobileNotifications.setDisabled(false);
+                    }
+                });
+            }
+        }, 10000);
+    </script> -->
+    <script type="text/javascript">
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-106902946-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="..//assets/js/script.js"></script>
+    
+    <script type="text/javascript" src="..//assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="..//assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="..//assets/js/owl.carousel.js"></script>
+    <!-- <script type="text/javascript" src="https://assets.Workiy.com/assets/js/jquery.onscreen.min.js"></script> -->
+    <script type="text/javascript" src="..//assets/js/snap.svg.js"></script>
+    <script type="text/javascript" src="..//assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var topFlag = false;
+            $(window).on("scroll", function() {
+                if ($(this).scrollTop() == 0) {
+                    topFlag = true;
+                }
+                if (topFlag == true) {
+
+                    var coursesElement = document.querySelector('.courses');
+                    var coursesPosition = coursesElement.getBoundingClientRect();
+                    if (coursesPosition.top < window.innerHeight && coursesPosition.bottom >= 0) {
+                        $(".courses").find(".common-title").children("span").addClass("slide-in-left");
+                        $(".courses").find(".sub-title").addClass("slide-in-bottom");
+                    }
+
+                    var testimonialElement = document.querySelector('.testimonial');
+                    var testimonialPosition = testimonialElement.getBoundingClientRect();
+                    if (testimonialPosition.top < window.innerHeight && testimonialPosition.bottom >= 0) {
+                        $(".testimonial").find(".common-title").children("span").addClass("slide-in-left");
+                        $(".testimonial").find(".sub-title").addClass("slide-in-bottom");
+                    }
+                }
+            });
+        });
+    </script>
+   
+
+    <script>
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        let prev = document.querySelector(".prev");
+        let next = document.querySelector(".next");
+
+        if (!slides.length == 0) {
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          let currentSlide = function (n) {
+            showSlides((slideIndex = n));
+          };
+
+          function showSlides(n) {
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        }
+
+        prev.addEventListener("click", () => {
+          plusSlides(-1);
+        });
+
+        next.addEventListener("click", () => {
+          plusSlides(1);
+        });
+    </script>
+
+</body>
+
+
+<!-- Mirrored from www.Workiy.com/course/playwright.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2023 19:16:51 GMT -->
+</html>

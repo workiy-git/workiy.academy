@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary: #00D976;
+    --competitive: #F1FCF8;
+    --text-color: #273F52;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style: none;
+}
+
+.common-title>span {
+    font-family: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header.scrolled {
+    background-color: #fff;
+}
+
+.competitive,
+.sub-footer {
+    background-color: var(--competitive);
+}
+
+.testimonial .common-title,
+.testimonial .sub-title {
+    color: #fff;
+}
+
+.offer {
+    background: url(../img/ready.svg) repeat;
+    background-size: contain;
+    background-color: var(--primary);
+}
+
+.green-text {
+    color: #2b9086;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.right-control>span {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 0.5rem;
+}
+
+.txt {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: left;
+    border-color: transparent;
+}
+
+.btn:focus,
+button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    background-color: var(--competitive);
+}
+
+#loader .spinner-border {
+    color: #005350
+}
+
+.quick-links li a,
+#main-menu li a {
+    transition: all 0.5s ease-in-out;
+}
+
+.quick-links li a:hover,
+#main-menu li a:hover {
+    color: var(--primary);
+}
+
+.svg svg {
+    width: 100%;
+    height: auto;
+}
+
+/*.common-title>span {
+    transform: translate(-100%, 0);
+}*/
+
+.sub-page .common-title>span {
+    transform: none;
+}
+
+hr {
+    position: relative;
+    border: none;
+    height: 6px;
+    background: var(--text-color);
+}
+
+@media screen and (min-width: 320px) {
+    .common-title {
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        color: var(--text-color);
+    }
+    .xl-text {
+        font-size: 2.35rem;
+    }
+    .sub-title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-color);
+        opacity: 0.9;
+        letter-spacing: 0.025rem;
+    }
+    .common-section {
+        padding: 3rem 0;
+    }
+    .common-section.has-main {
+        padding: 0;
+    }
+    .common-section.has-main .main-container {
+        padding: 3rem 0;
+    }
+    .common-section.offer {
+        padding: 2.25rem 0;
+    }
+    footer .navbar-brand {
+        width: 15rem;
+    }
+    footer .navbar-brand+p {
+        font-size: 0.85rem;
+    }
+    footer .navbar-brand+p {
+        color: #948e8e;
+    }
+    .common-title.sm-text {
+        font-size: 1.25rem;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+    }
+    .sub-footer {
+        padding: 1.5rem 0;
+    }
+    .xl-text+p {
+        font-size: 0.9rem;
+        opacity: 0.85;
+    }
+    header .navbar-toggler {
+        position: relative;
+        z-index: 11;
+        max-width: 3rem;
+        border: 0;
+    }
+    header .navbar-toggler svg path {
+        transition: all 0.3s ease-in-out;
+    }
+    header .navbar-toggler path {
+        fill: var(--primary);
+    }
+    header .navbar-toggler.open svg path:nth-child(1) {
+        transform: rotate(-45deg) translate(-18rem, -12rem);
+    }
+    header .navbar-toggler.open svg path:nth-child(2) {
+        opacity: 0;
+    }
+    header .navbar-toggler.open svg path:nth-child(3) {
+        transform: rotate(45deg) translate(3.5rem, -5rem);
+    }
+    .sub-page .sub-banner {
+        height: 17.5rem;
+        background-color: var(--competitive);
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .m-450-0 {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .w-sm-auto {
+        width: auto !important;
+    }
+    .xl-text+p {
+        font-size: 1.15rem;
+    }
+    .sub-page .sub-banner {
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+    .common-title {
+        font-size: 2.25rem;
+    }
+    .xl-text {
+        font-size: 3.25rem;
+    }
+    .sub-title {
+        font-size: 1.1rem;
+    }
+    .common-section {
+        padding: 4.5rem 0;
+    }
+    .common-section.has-main .main-container {
+        padding: 4.5rem 0;
+    }
+    .common-section.offer {
+        padding: 3rem 0;
+    }
+    .enquiry-section {
+        padding: 2.5rem 0;
+    }
+    .enquiry-section.has-main .main-container {
+        padding: 1.5rem 0;
+    }
+    .enquiry-section.offer {
+        padding: 1 rem 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .banner .svg svg {
+        width: 100%;
+        height: 100%;
+    }
+    .common-title {
+        font-size: 2.5rem;
+    }
+    .xl-text {
+        font-size: 3.5rem;
+    }
+    .sub-title {
+        font-size: 1.15rem;
+    }
+    .shadow-lg-none {
+        box-shadow: none !important;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .common-section {
+        padding: 6rem 0;
+    }
+    .training-section {
+        padding: 2rem 0;
+    }
+    .common-section.has-main .main-container {
+        padding: 6rem 0;
+    }
+    .common-section.offer {
+        padding: 4.5rem 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .common-title {
+        font-size: 2.75rem;
+    }
+    .xl-text {
+        font-size: 4rem;
+    }
+    .sub-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .main-container {
+        max-width: 1420px;
+        margin: 0 auto;
+    }
+}
+
+
+/*Banner Animation*/
+
+svg g#Student image {
+    transform-origin: center;
+    opacity: 0;
+}
+
+svg #Background {
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+svg #Improvement {
+    opacity: 0;
+}
+
+svg #Class {
+    opacity: 0;
+}
+
+svg #Welcome-onboard {
+    opacity: 0;
+}
+
+.start-anim svg #Background {
+    opacity: 1;
+}
+
+.start-anim svg g#Student image {
+    animation: imageSlide 0.5s ease-in-out 0.4s forwards;
+}
+
+.start-anim svg #Improvement {
+    animation: bannerImprovement 0.5s ease-in-out 0.5s forwards;
+}
+
+.start-anim svg #Class {
+    animation: bannerClassAnim 0.5s ease-in-out 0.75s forwards;
+}
+
+.start-anim svg #Welcome-onboard {
+    animation: bannerWelcome 0.5s ease-in-out 1s forwards;
+}
+
+@keyframes imageSlide {
+    0% {
+        transform: translate(50%, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes bannerImprovement {
+    0% {
+        transform: translate(0.000000, 375.353622px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0.000000, 405.353622px);
+        opacity: 1;
+    }
+}
+
+@keyframes bannerClassAnim {
+    0% {
+        transform: translate(349.160409px, 210.852073px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(349.160409px, 249.852073px);
+        opacity: 1;
+    }
+}
+
+@keyframes bannerWelcome {
+    0% {
+        transform: translate(349.160409px, 635.644391px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(349.160409px, 659.644391px);
+        opacity: 1;
+    }
+}
+
+
+/* .start-anim svg g#Student image {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.start-anim svg #Improvement {
+  transform: translate(0.000000, 405.353622);
+  opacity: 1;
+}
+.start-anim svg #Class {
+  transform: translate(349.160409, 249.852073);
+  opacity: 1;
+}
+.start-anim svg #Welcome-onboard {
+  transform: translate(349.160409, 659.644391);
+  opacity: 1;
+} */
+
+
+/*Banner Animation*/
+
+.boy-part,
+#leaf,
+#chair,
+.circle,
+.extra,
+#chair-base,
+#plant-1,
+#plant-2 {
+    opacity: 0;
+}
+
+#frame polygon {
+    opacity: 0;
+}

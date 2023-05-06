@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="25px" viewBox="0 0 14 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>i-chevron_up</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform-origin="center" transform="rotate(180)">
+        <g id="Header" transform="translate(-1362.000000, -951.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="i-chevron_up" transform="translate(1369.000000, 963.500159) rotate(90.000000) translate(-1369.000000, -963.500159) translate(1357.000000, 957.000000)">
+                <path d="M24,9.99975 L24,11.99975 C24,12.38575 23.777,12.73775 23.428,12.90375 C23.079,13.06975 22.666,13.01875 22.366,12.77375 L12,4.29175 L1.633,12.77375 C1.334,13.01875 0.921,13.06875 0.571,12.90375 C0.221,12.73875 0,12.38575 0,11.99975 L0,9.99975 C0,9.69975 0.135,9.41575 0.367,9.22575 L11.367,0.22575 C11.736,-0.07525 12.265,-0.07525 12.634,0.22575 L23.634,9.22575 C23.865,9.41575 24,9.69975 24,9.99975 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

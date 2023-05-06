@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="703px" height="620px" viewBox="0 0 703 620" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>career-bg</title>
+    <defs>
+        <circle id="path-1" cx="302" cy="302" r="302"></circle>
+        <linearGradient x1="90.3533359%" y1="43.8826492%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#2FE6AB" stop-opacity="0.731889205" offset="0%"></stop>
+            <stop stop-color="#15C872" stop-opacity="0.499699519" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(-122.000000, -3215.000000)">
+            <g id="03_Features" transform="translate(122.000000, 3122.000000)">
+                <g id="career-bg" transform="translate(0.000000, 93.000000)">
+                    <g id="Group">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval" fill="#2C3E50" xlink:href="#path-1"></use>
+                        <circle id="Oval" fill-opacity="0.289339079" fill="#FFFFFF" mask="url(#mask-2)" cx="427.5" cy="193.5" r="193.5"></circle>
+                    </g>
+                    <circle id="Oval" fill="url(#linearGradient-3)" cx="648.5" cy="565.5" r="54.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
