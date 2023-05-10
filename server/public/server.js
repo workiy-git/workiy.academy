@@ -1,28 +1,54 @@
 const express = require('express');
 const mysql = require('mysql');
 const nodemailer = require('nodemailer');
-
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const port = 4000;
 const app = express();
 
 app.use(express.static('public'));
 
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    fs.readFile('index.html', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Error loading index.html');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else {
+    res.writeHead(404);
+    res.end('Page not found');
+  }
+});
 
+//server.listen(4000, () => {
+//  console.log('Server running on http://localhost:4000');
+//});
 
 // Create connection to MySQL database
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'student_registration_form'
+ user: 'student',
+ password: 'Yuja2hjw#2020',
+ database: 'student_registration_form'
 });
 
 // Connect to MySQL database
 db.connect((err) => {
   if (err) {
-      throw err;
-  }
-  console.log('Connected to MySQL database...');
+  throw err;
+ }
+ console.log('Connected to MySQL database...');
 });
+
+
+
 
 // Set up middleware to parse form data
 app.use(express.urlencoded({ extended: false }));
@@ -96,12 +122,12 @@ app.post('/upload', (req, res) => {
       });
       
       
-            
+            res.sendFile(__dirname + '/public/welcome-student-page.html');
         });
       });
 
 
 
-app.listen(3000, () => {
-  console.log('serving at poart:3000')
+app.listen(4000, () => {
+  console.log('serving at port:4000')
 });
