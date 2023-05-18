@@ -2108,7 +2108,7 @@ background-size: 58%; */
     display: none;
   }
 .links {
-  transform: translateX(100%); /* set the initial position of the element off-screen */
+  transform: translateX(100%); 
   content: "";
   position: absolute;
   width: 13rem;

@@ -27,9 +27,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-//server.listen(4000, () => {
-//  console.log('Server running on http://localhost:4000');
-//});
 
 // Create connection to MySQL database
 const db = mysql.createConnection({
@@ -61,6 +58,19 @@ app.post('/upload', (req, res) => {
           throw err;
       }
       console.log('Data inserted successfully!');
+
+            // Fetch email and password from the credentials table in the database
+const credentials = "SELECT Email_from, Email_to, Password FROM credentials";
+db.query(credentials, (error, results) => {
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  // Extract the email and password from the query results
+  const Email_from = results[0].Email_from;
+  const Email_to = results[0].Email_to;
+  const Password = results[0].Password;
       
             // Create a nodemailer transport object
             const transporter = nodemailer.createTransport({
@@ -68,18 +78,18 @@ app.post('/upload', (req, res) => {
               port: 465,
               secure: true,
               auth: {
-                user: 'hr@workiy.ca',
-                pass: 'Tamilnadu016@'
+                user: Email_from,
+                pass: Password
               }
             });
       
             // Compose the email message
             const mailOptions = {
-              from: 'hr@workiy.ca',
-              to: 'workiy.academy@gmail.com',
+              from: Email_from,
+              to: Email_to,
               subject: 'A NEW STUDENT REGISTRED IN WORKIY-ACADEMY',
               
-              html: `<p>Hai sathis,</p><p>A new student has been Registred. Here are the details:</p><ul><li>Name: ${Name}</li><li>Email: ${Email}</li><li>Phone Number: ${Phone_Number}</li><li>Course: ${Course}</li><li>Message: ${Message}</li></ul>`
+              html: `<p>Hai Team,</p><p>A new student has been Registred. Here are the details:</p><ul><li>Name: ${Name}</li><li>Email: ${Email}</li><li>Phone Number: ${Phone_Number}</li><li>Course: ${Course}</li><li>Message: ${Message}</li></ul>`
             };
       
             // Send the email
@@ -98,14 +108,14 @@ app.post('/upload', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-          user: 'hr@workiy.ca',
-          pass: 'Tamilnadu016@'
+          user: Email_from,
+          pass: Password
         }
       });
       
       // Compose the email message
       const mailOptions1 = {
-        from: 'hr@workiy.ca',
+        from: Email_from,
         to: Email, // Use the Email field from the form data
         subject: 'Welcome to Workiy Academy!',
               
@@ -122,11 +132,11 @@ app.post('/upload', (req, res) => {
       });
       
       
-            res.sendFile(__dirname + '/public/welcome-student-page.html');
+            
         });
       });
 
-
+    });
 
 app.listen(4000, () => {
   console.log('serving at port:4000')
