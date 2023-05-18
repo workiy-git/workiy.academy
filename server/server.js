@@ -66,7 +66,7 @@ db.query(credentials, (error, results) => {
               to: Email_to,
               subject: 'A NEW STUDENT REGISTRED IN WORKIY-ACADEMY',
               
-              html: `<p>Hai sathis,</p><p>A new student has been Registred. Here are the details:</p><ul><li>Name: ${Name}</li><li>Email: ${Email}</li><li>Phone Number: ${Phone_Number}</li><li>Course: ${Course}</li><li>Message: ${Message}</li></ul>`
+              html: `<p>Hai Team,</p><p>A new student has been Registred. Here are the details:</p><ul><li>Name: ${Name}</li><li>Email: ${Email}</li><li>Phone Number: ${Phone_Number}</li><li>Course: ${Course}</li><li>Message: ${Message}</li></ul>`
             };
       
             // Send the email
