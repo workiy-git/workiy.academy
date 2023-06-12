@@ -116,5 +116,5 @@ db.query(credentials, (error, results) => {
 
 
 app.listen(3000, () => {
-  console.log('serving at poart:3000')
+  console.log('serving at port:3000')
 });
